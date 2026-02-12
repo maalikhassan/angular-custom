@@ -4,10 +4,11 @@ import { About } from "./page/about/about";
 import { Contact } from "./page/contact/contact";
 import { Nav } from "./page/nav/nav";
 import { Footer } from "./page/footer/footer";
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, About, Contact, Nav, Footer],
+  imports: [RouterOutlet, About, Contact, Nav, Footer,FormsModule],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

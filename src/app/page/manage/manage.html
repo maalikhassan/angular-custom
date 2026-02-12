@@ -1,0 +1,28 @@
+<div class="manage-container">
+  <div class="form-card">
+    <h2>Customer Information</h2>
+    
+    <form class="simple-form">
+      <div class="form-field">
+        <label for="name">Name</label>
+        <input [(ngModel)]="customer.name" type="text" name="name" placeholder="Enter customer name"  >
+      </div>
+
+      <div class="form-field">
+        <label for="email">Email</label>
+        <input [(ngModel)]="customer.email" type="email" name="email" placeholder="Enter email address"  >
+      </div>
+
+      <div class="form-field">
+        <label for="phone">Phone</label>
+        <input [(ngModel)]="customer.phone" type="tel" name="phone" placeholder="Enter phone number"  >
+      </div>
+
+      <p>{{this.customer.name}}-{{this.customer.email}}-{{this.customer.phone}}</p>
+
+      <button type="submit" class="submit-btn" (click)="addCustomer()">Submit</button>
+    </form>
+  </div>
+</div>
+
+
