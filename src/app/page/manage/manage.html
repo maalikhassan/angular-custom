@@ -22,6 +22,16 @@
 
       <button type="submit" class="submit-btn" (click)="addCustomer()">Submit</button>
     </form>
+
+    <h2>Customer List</h2>
+    <table border="1" *ngFor="let customerObj of customers">
+        <tr>
+            <td>{{customerObj.name}}</td>
+            <td>{{customerObj.email}}</td>
+            <td>{{customerObj.phone}}</td>
+        </tr>
+
+    </table>
   </div>
 </div>
 

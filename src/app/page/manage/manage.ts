@@ -1,14 +1,16 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-interface Customer {
+interface Customer { 
   name: string;
   email: string;
   phone: string;
 }
+
 @Component({
   selector: 'app-manage',
-  imports: [FormsModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './manage.html',
   styleUrl: './manage.css',
 })
